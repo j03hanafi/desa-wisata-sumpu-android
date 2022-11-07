@@ -1,0 +1,300 @@
+--release
+--output
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects
+--lib
+C:\Android\platforms\android-30\android.jar
+C:\Android\tools\..\extras\b4a_local\unpacked-b4ashared-63792593270000\dex_v1\b4ashared.zip
+c:\android\tools\..\extras\b4a_remote\androidx\legacy\legacy-support-v4\1.0.0\unpacked-legacy-support-v4-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\core\core\1.3.1\unpacked-core-1.3.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-runtime\2.2.0\unpacked-lifecycle-runtime-2.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\versionedparcelable\versionedparcelable\1.1.1\unpacked-versionedparcelable-1.1.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\media\media\1.1.0\unpacked-media-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\legacy\legacy-support-core-utils\1.0.0\unpacked-legacy-support-core-utils-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\documentfile\documentfile\1.0.1\unpacked-documentfile-1.0.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\loader\loader\1.1.0\unpacked-loader-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-livedata-core\2.2.0\unpacked-lifecycle-livedata-core-2.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\arch\core\core-runtime\2.1.0\unpacked-core-runtime-2.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-viewmodel\2.2.0\unpacked-lifecycle-viewmodel-2.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\localbroadcastmanager\localbroadcastmanager\1.0.0\unpacked-localbroadcastmanager-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\print\print\1.0.0\unpacked-print-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\legacy\legacy-support-core-ui\1.0.0\unpacked-legacy-support-core-ui-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\customview\customview\1.1.0\unpacked-customview-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\viewpager\viewpager\1.0.0\unpacked-viewpager-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\coordinatorlayout\coordinatorlayout\1.1.0\unpacked-coordinatorlayout-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\drawerlayout\drawerlayout\1.1.0\unpacked-drawerlayout-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\slidingpanelayout\slidingpanelayout\1.1.0\unpacked-slidingpanelayout-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\interpolator\interpolator\1.0.0\unpacked-interpolator-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\swiperefreshlayout\swiperefreshlayout\1.1.0\unpacked-swiperefreshlayout-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\asynclayoutinflater\asynclayoutinflater\1.0.0\unpacked-asynclayoutinflater-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\cursoradapter\cursoradapter\1.0.0\unpacked-cursoradapter-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\fragment\fragment\1.2.5\unpacked-fragment-1.2.5\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\fragment\fragment\1.2.5\unpacked-fragment-1.2.5\jars\lint.zip
+c:\android\tools\..\extras\b4a_remote\androidx\activity\activity\1.1.0\unpacked-activity-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\savedstate\savedstate\1.0.0\unpacked-savedstate-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-viewmodel-savedstate\2.2.0\unpacked-lifecycle-viewmodel-savedstate-2.2.0\jars\classes.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-ahpreferenceactivity-63795124460608\dex_v1\ahpreferenceactivity.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-b4xencryption-63792593270000\dex_v1\b4xencryption.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-byteconverter-63792593270000\dex_v1\byteconverter.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-core-63792593270000\dex_v1\core.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-encryption-63795124460648\dex_v1\encryption.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-gps-63792593270000\dex_v1\gps.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-javaobject-63792593270000\dex_v1\javaobject.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-json-63792593270000\dex_v1\json.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-keyvaluestore2-63792593270000\dex_v1\keyvaluestore2.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-reflection-63792593270000\dex_v1\reflection.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-runtimepermissions-63792593270000\dex_v1\runtimepermissions.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-viewsex-63792593270000\dex_v1\viewsex.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-webviewextras-63580131040000\dex_v1\webviewextras.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-webviewsettings-63795124460719\dex_v1\webviewsettings.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-xcustomlistview-63792593270000\dex_v1\xcustomlistview.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-xui-63792593270000\dex_v1\xui.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-randomaccessfile-63792593270000\dex_v1\randomaccessfile.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-sql-63792593270000\dex_v1\sql.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-stringutils-63792593270000\dex_v1\stringutils.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-63792593270000\dex_v1\okhttp.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-bitmapcreator-63792593270000\dex_v1\bitmapcreator.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-dateutils-63792593270000\dex_v1\dateutils.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-ime-63792593270000\dex_v1\ime.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-4.9.0-63792593270000\dex_v1\okhttp-4.9.0.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okio-2.8.0-63792593270000\dex_v1\okio-2.8.0.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-urlconnection-4.9.3-63792593270000\dex_v1\okhttp-urlconnection-4.9.3.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-kotlin-stdlib-1.6.10-63792593270000\dex_v1\kotlin-stdlib-1.6.10.zip
+c:\android\tools\..\extras\b4a_remote\androidx\annotation\annotation\1.1.0\annotation-1.1.0.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-common\2.2.0\lifecycle-common-2.2.0.zip
+c:\android\tools\..\extras\b4a_remote\androidx\arch\core\core-common\2.1.0\core-common-2.1.0.zip
+c:\android\tools\..\extras\b4a_remote\androidx\collection\collection\1.1.0\collection-1.1.0.zip
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$anim.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$attr.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$color.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$dimen.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$drawable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$id.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$integer.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$layout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$string.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$style.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R$styleable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\coordinatorlayout\R.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$anim.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$attr.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$color.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$dimen.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$drawable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$id.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$integer.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$layout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$string.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$style.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R$styleable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\core\R.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$anim.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$attr.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$color.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$dimen.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$drawable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$id.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$integer.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$layout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$string.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$style.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R$styleable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\drawerlayout\R.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$anim.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$attr.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$color.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$dimen.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$drawable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$id.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$integer.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$layout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$string.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$style.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R$styleable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\fragment\R.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$anim.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$attr.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$color.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$dimen.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$drawable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$id.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$integer.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$layout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$string.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$style.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R$styleable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\media\R.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$anim.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$attr.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$color.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$dimen.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$drawable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$id.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$integer.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$layout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$string.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$style.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R$styleable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\androidx\swiperefreshlayout\R.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\animatedcounter.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\anotherprogressbar$ResumableSub_BusyLoop.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\anotherprogressbar.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xbitset.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xbreadcrumb.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xbytesbuilder.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xcache$_b4xcacheitem.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xcache.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xcollections.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xcolortemplate$ResumableSub_Show.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xcolortemplate$_colorpickerpart.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xcolortemplate.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xcombobox$ResumableSub_RaiseEvent.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xcombobox.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xcomparatorsort.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xdatetemplate$ResumableSub_Show.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xdatetemplate.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xdialog$ResumableSub_Show.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xdialog$ResumableSub_ShowCustom.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xdialog$ResumableSub_ShowTemplate.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xdialog.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xfloattextfield$ResumableSub_SwitchFromPasswordToRegular.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xfloattextfield.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xformatter$_b4xformatdata.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xformatter.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4ximageview.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xinputtemplate$ResumableSub_Show.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xinputtemplate.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xlisttemplate$ResumableSub_Show.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xlisttemplate.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xloadingindicator$ResumableSub_MainLoop.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xloadingindicator.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xlongtexttemplate.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xorderedmap.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xplusminus$ResumableSub_StartDownLoop.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xplusminus.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xradiobutton$ResumableSub_SetValueImpl.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xradiobutton.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xsearchtemplate$ResumableSub_Show.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xsearchtemplate.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xseekbar.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xset.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xsignaturetemplate.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xswitch$ResumableSub_SetValueImpl.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xswitch.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xtimedtemplate$ResumableSub_Show.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\b4xtimedtemplate.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\bitmapsasync$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\bitmapsasync$ResumableSub_LoadFromFile.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\bitmapsasync$ResumableSub_LoadFromHttpJob.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\bitmapsasync.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\core.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailev$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailev$B4AMenuItemsClickListener.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailev$HandleKeyDelayed.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailev$ResumeMessage.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailev$WaitForLayout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailev.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailrg$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailrg$B4AMenuItemsClickListener.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailrg$HandleKeyDelayed.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailrg$ResumeMessage.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailrg$WaitForLayout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\detailrg.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homeuser$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homeuser$B4AMenuItemsClickListener.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homeuser$HandleKeyDelayed.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homeuser$ResumeMessage.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homeuser$WaitForLayout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homeuser.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homevisitor$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homevisitor$B4AMenuItemsClickListener.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homevisitor$HandleKeyDelayed.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homevisitor$ResumeMessage.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homevisitor$WaitForLayout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\homevisitor.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\httpjob$_multipartfiledata.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\httpjob.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\httputils2service$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\httputils2service$2.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\httputils2service$httputils2service_BR.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\httputils2service.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listev$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listev$B4AMenuItemsClickListener.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listev$HandleKeyDelayed.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listev$ResumeMessage.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listev$WaitForLayout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listev.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listrg$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listrg$B4AMenuItemsClickListener.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listrg$HandleKeyDelayed.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listrg$ResumeMessage.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listrg$WaitForLayout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\listrg.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\madewithlove.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\main$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\main$B4AMenuItemsClickListener.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\main$HandleKeyDelayed.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\main$ResumeMessage.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\main$WaitForLayout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\main.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsev$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsev$B4AMenuItemsClickListener.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsev$HandleKeyDelayed.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsev$ResumableSub_Activity_Resume.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsev$ResumableSub_btnDate_Click.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsev$ResumeMessage.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsev$WaitForLayout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsev.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsrg$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsrg$B4AMenuItemsClickListener.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsrg$HandleKeyDelayed.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsrg$ResumableSub_Activity_Resume.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsrg$ResumeMessage.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsrg$WaitForLayout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\mapsrg.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$anim.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$attr.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$color.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$dimen.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$drawable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$id.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$integer.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$layout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$string.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$style.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R$styleable.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\R.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\requestsmanager.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\roundslider.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\scrollinglabel$ResumableSub_StartScrolling.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\scrollinglabel.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\simplemediamanager$ResumableSub_DownloadImageMedia.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\simplemediamanager$ResumableSub_PrepareMedia.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\simplemediamanager$ResumableSub_RegisterForMeta.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\simplemediamanager$_smmedia.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\simplemediamanager$_smmediameta.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\simplemediamanager$_smmediarequest.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\simplemediamanager$_smmediarequestset.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\simplemediamanager.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\smmviews$ResumableSub_AddMedia.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\smmviews$_smmview.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\smmviews.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\starter$1.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\starter$2.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\starter$starter_BR.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\starter.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\swiftbutton.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\xuiviewsutils.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_detail.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_detailitem.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_homeuser.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_homevisitor.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_itemev.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_itemrg.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_layout.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_list.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_listdesign.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_login.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_mainscrollview.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_mapsev.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_mapsrg.dex
+D:\Development\Projects\Tugas Akhir\Android\desa-wisata-sumpu-android\Objects\dexed\b4a\DesaWisataSumpu\designerscripts\LS_searchtemplate.dex

@@ -1,0 +1,235 @@
+﻿Build1=Default,b4a.DesaWisataSumpu
+File1=back-arrow.png
+File10=ItemRG.bal
+File11=Layout.bal
+File12=List.bal
+File13=ListDesign.bal
+File14=Login.bal
+File15=logo.png
+File16=MainScrollView.bal
+File17=maps.png
+File18=MapsEV.bal
+File19=MapsRG.bal
+File2=bg-header.jpg
+File20=pesona_sumpu.png
+File21=sign-in.png
+File22=sign-out.png
+File3=bullhorn.png
+File4=campground-solid.png
+File5=Detail.bal
+File6=DetailItem.bal
+File7=HomeUser.bal
+File8=HomeVisitor.bal
+File9=itemEV.bal
+FileGroup1=Images
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Images
+FileGroup16=Default Group
+FileGroup17=Images
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Images
+FileGroup20=Images
+FileGroup21=Images
+FileGroup22=Images
+FileGroup3=Images
+FileGroup4=Images
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=ahpreferenceactivity
+Library10=okhttputils2
+Library11=reflection
+Library12=runtimepermissions
+Library13=simplemediamanager
+Library14=viewsex
+Library15=webviewextras
+Library16=webviewsettings
+Library17=xcustomlistview
+Library18=xui
+Library19=xui views
+Library2=b4xencryption
+Library3=byteconverter
+Library4=core
+Library5=encryption
+Library6=gps
+Library7=javaobject
+Library8=json
+Library9=keyvaluestore2
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="30"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.~\n~SetApplicationAttribute(android:usesCleartextTraffic, "true")
+Module1=Core
+Module10=Starter
+Module2=DetailEV
+Module3=DetailRG
+Module4=HomeUser
+Module5=HomeVisitor
+Module6=ListEV
+Module7=ListRG
+Module8=MapsEV
+Module9=MapsRG
+NumberOfFiles=22
+NumberOfLibraries=19
+NumberOfModules=10
+Version=11.8
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: Pesona Sumpu
+	#VersionCode: 1
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Public server As String = "https://pesonasumpu.azurewebsites.net/"
+	Public API As String = server&"api/"
+	Public data, user As Map
+	Public id, username, email, first_name, last_name, avatar, address, phone As String
+	Public in_group As Boolean
+	Public manager As AHPreferenceManager
+	Private xui As XUI
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	Private MainScroll As ScrollView
+	Private Navbar As Panel
+	Private BtnLogin As Button
+	Private BtnVisitor As Button
+	Private EditLogin As EditText
+	Private EditPassword As EditText
+	Private ImageLogin As ImageView
+	Private PanelLogin As Panel
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	
+	If manager.GetBoolean("is_login") Then
+	Else
+		manager.SetBoolean("visitor", True)
+		manager.SetBoolean("user", False)
+		Activity.Finish
+		StartActivity(HomeVisitor)
+	End If
+	
+	CheckLogin
+	Activity.LoadLayout("MainScrollView")
+	MainScroll.Panel.LoadLayout("Login")
+	Navbar.Visible = False
+		
+	If Navbar.Visible == False Then
+		MainScroll.Top = MainScroll.Top - Navbar.Height
+		MainScroll.Height = MainScroll.Height + Navbar.Height
+		
+	End If
+	PanelLogin.Height = MainScroll.Height
+	MainScroll.Panel.Height = MainScroll.Height
+	
+End Sub
+
+Sub Activity_Resume
+	Log("Login loaded")
+	Log("Resume: "&manager.GetBoolean("Hanafi"))
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+
+Private Sub BtnVisitor_Click
+	Log("Redirecting to HomeVisitor Activity")
+	manager.SetBoolean("is_login", False)
+	manager.SetBoolean("visitor", True)
+	manager.SetBoolean("user", False)
+	Activity.Finish
+	StartActivity(HomeVisitor)
+End Sub
+
+Private Sub BtnLogin_Click
+	Core.ExecuteUrl(API&"login", "login="&EditLogin.Text&"&password="&EditPassword.Text, "Login", Me)
+End Sub
+
+Sub CheckLogin
+	Log("Checking login status...")
+	Dim isLogin As Boolean
+	isLogin = manager.GetBoolean("is_login")
+	If isLogin Then
+		If manager.GetBoolean("user") Then
+			Log("Redirecting to HomeUser activity")
+			Activity.Finish
+			StartActivity(HomeUser)
+		End If
+	End If
+End Sub
+
+Sub JobDone (Job As HttpJob)
+	Log("JobName = " & Job.JobName & ", Success = " & Job.Success)
+	If Job.Success Then
+		Try
+			Dim res As String
+			res = Job.GetString
+			Dim parser As JSONParser
+			parser.Initialize(res)
+			Log("Response from server :"&res)
+			
+			Dim map As Map
+			map = parser.NextObject
+			data = map.Get("data")
+			in_group = data.Get("in_group")
+			If in_group Then
+				user = data.Get("user")
+				id = user.Get("id")
+				email = user.Get("email")
+				username = user.Get("username")
+				first_name = user.Get("first_name")
+				last_name = user.Get("last_name")
+				avatar = user.Get("avatar")
+				address = user.Get("address")
+				phone = user.Get("phone")
+			
+				ToastMessageShow("Login as User", False)
+				Msgbox("Hi, "&first_name&" "&last_name, "Logged In")
+				Log("Redirect to HomeUser Activity")
+				
+				manager.SetBoolean("is_login", True)
+				manager.SetBoolean("user", True)
+				manager.SetBoolean("visitor", False)
+				manager.SetString("user_id", id)
+				Activity.Finish
+				StartActivity(HomeUser)
+			Else
+				Msgbox("Please input correct credentials", "Login Failed")
+			End If
+		Catch
+			Log(LastException)
+		End Try
+	Else
+		Dim errorParser As JSONParser
+		errorParser.Initialize(Job.ErrorMessage)
+		
+		Dim errorMap As Map
+		errorMap = errorParser.NextObject
+		Log("Error: " & Job.ErrorMessage)
+		
+		Dim error As String
+		error = errorMap.Get("message")
+		ToastMessageShow("Error: " & error, True)
+	End If
+	Job.Release
+End Sub
