@@ -34,7 +34,7 @@ public class detailev extends Activity implements B4AActivity{
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new BA(this.getApplicationContext(), null, null, "b4a.DesaWisataSumpu", "b4a.DesaWisataSumpu.detailev");
+			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "b4a.DesaWisataSumpu", "b4a.DesaWisataSumpu.detailev");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,6 +335,15 @@ public class detailev extends Activity implements B4AActivity{
             
     }
 
+
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public uk.co.martinpearman.b4a.webviewextras.WebViewExtras _mywebviewextras = null;
 public uk.co.martinpearman.b4a.webviewsettings.WebViewSettings _mywebviewsettings = null;
@@ -357,78 +366,75 @@ public b4a.DesaWisataSumpu.listev _listev = null;
 public b4a.DesaWisataSumpu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSumpu.b4xcollections _b4xcollections = null;
 public b4a.DesaWisataSumpu.xuiviewsutils _xuiviewsutils = null;
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
 public static String  _activity_create(boolean _firsttime) throws Exception{
- //BA.debugLineNum = 24;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 27;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
+RDebugUtils.currentModule="detailev";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
+RDebugUtils.currentLine=5439488;
+ //BA.debugLineNum = 5439488;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=5439491;
+ //BA.debugLineNum = 5439491;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
 mostCurrent._activity.LoadLayout("MainScrollView",mostCurrent.activityBA);
- //BA.debugLineNum = 28;BA.debugLine="MainScroll.Panel.LoadLayout(\"Detail\")";
+RDebugUtils.currentLine=5439492;
+ //BA.debugLineNum = 5439492;BA.debugLine="MainScroll.Panel.LoadLayout(\"Detail\")";
 mostCurrent._mainscroll.getPanel().LoadLayout("Detail",mostCurrent.activityBA);
- //BA.debugLineNum = 29;BA.debugLine="wvDetail.Height = MainScroll.Height";
+RDebugUtils.currentLine=5439493;
+ //BA.debugLineNum = 5439493;BA.debugLine="wvDetail.Height = MainScroll.Height";
 mostCurrent._wvdetail.setHeight(mostCurrent._mainscroll.getHeight());
- //BA.debugLineNum = 30;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
+RDebugUtils.currentLine=5439494;
+ //BA.debugLineNum = 5439494;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
 mostCurrent._mainscroll.getPanel().setHeight(mostCurrent._mainscroll.getHeight());
- //BA.debugLineNum = 31;BA.debugLine="TitleNavbar.Text = Starter.selectedObj.Get(\"name\"";
+RDebugUtils.currentLine=5439495;
+ //BA.debugLineNum = 5439495;BA.debugLine="TitleNavbar.Text = Starter.selectedObj.Get(\"name\"";
 mostCurrent._titlenavbar.setText(BA.ObjectToCharSequence(mostCurrent._starter._selectedobj /*anywheresoftware.b4a.objects.collections.Map*/ .Get((Object)("name"))));
- //BA.debugLineNum = 33;BA.debugLine="MyWebViewExtras.addWebChromeClient(wvDetail, \"wvD";
+RDebugUtils.currentLine=5439497;
+ //BA.debugLineNum = 5439497;BA.debugLine="MyWebViewExtras.addWebChromeClient(wvDetail, \"wvD";
 mostCurrent._mywebviewextras.addWebChromeClient(mostCurrent.activityBA,(android.webkit.WebView)(mostCurrent._wvdetail.getObject()),"wvDetail");
- //BA.debugLineNum = 34;BA.debugLine="wvDetail.JavaScriptEnabled = True";
+RDebugUtils.currentLine=5439498;
+ //BA.debugLineNum = 5439498;BA.debugLine="wvDetail.JavaScriptEnabled = True";
 mostCurrent._wvdetail.setJavaScriptEnabled(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 35;BA.debugLine="wvDetail.LoadUrl(Main.server&\"web/event/detail/\"&";
+RDebugUtils.currentLine=5439499;
+ //BA.debugLineNum = 5439499;BA.debugLine="wvDetail.LoadUrl(Main.server&\"web/event/detail/\"&";
 mostCurrent._wvdetail.LoadUrl(mostCurrent._main._server /*String*/ +"web/event/detail/"+BA.ObjectToString(mostCurrent._starter._selectedobj /*anywheresoftware.b4a.objects.collections.Map*/ .Get((Object)("id"))));
- //BA.debugLineNum = 36;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5439500;
+ //BA.debugLineNum = 5439500;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 42;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 44;BA.debugLine="End Sub";
+RDebugUtils.currentModule="detailev";
+RDebugUtils.currentLine=5570560;
+ //BA.debugLineNum = 5570560;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=5570562;
+ //BA.debugLineNum = 5570562;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 38;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 39;BA.debugLine="Log(\"DetailEV loaded\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("45505025","DetailEV loaded",0);
- //BA.debugLineNum = 40;BA.debugLine="End Sub";
+RDebugUtils.currentModule="detailev";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
+RDebugUtils.currentLine=5505024;
+ //BA.debugLineNum = 5505024;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=5505025;
+ //BA.debugLineNum = 5505025;BA.debugLine="Log(\"DetailEV loaded\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("55505025","DetailEV loaded",0);
+RDebugUtils.currentLine=5505026;
+ //BA.debugLineNum = 5505026;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnback_click() throws Exception{
- //BA.debugLineNum = 47;BA.debugLine="Private Sub BtnBack_Click";
- //BA.debugLineNum = 48;BA.debugLine="Log(\"Going back to previous activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("45636097","Going back to previous activity",0);
- //BA.debugLineNum = 49;BA.debugLine="Activity.Finish";
+RDebugUtils.currentModule="detailev";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnback_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnback_click", null));}
+RDebugUtils.currentLine=5636096;
+ //BA.debugLineNum = 5636096;BA.debugLine="Private Sub BtnBack_Click";
+RDebugUtils.currentLine=5636097;
+ //BA.debugLineNum = 5636097;BA.debugLine="Log(\"Going back to previous activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("55636097","Going back to previous activity",0);
+RDebugUtils.currentLine=5636098;
+ //BA.debugLineNum = 5636098;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
- //BA.debugLineNum = 50;BA.debugLine="End Sub";
-return "";
-}
-public static String  _globals() throws Exception{
- //BA.debugLineNum = 12;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 15;BA.debugLine="Private MyWebViewExtras As WebViewExtras";
-mostCurrent._mywebviewextras = new uk.co.martinpearman.b4a.webviewextras.WebViewExtras();
- //BA.debugLineNum = 16;BA.debugLine="Private MyWebViewSettings As WebViewSettings";
-mostCurrent._mywebviewsettings = new uk.co.martinpearman.b4a.webviewsettings.WebViewSettings();
- //BA.debugLineNum = 17;BA.debugLine="Private BtnBack As Button";
-mostCurrent._btnback = new anywheresoftware.b4a.objects.ButtonWrapper();
- //BA.debugLineNum = 18;BA.debugLine="Private MainScroll As ScrollView";
-mostCurrent._mainscroll = new anywheresoftware.b4a.objects.ScrollViewWrapper();
- //BA.debugLineNum = 19;BA.debugLine="Private Navbar As Panel";
-mostCurrent._navbar = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 20;BA.debugLine="Private TitleNavbar As Label";
-mostCurrent._titlenavbar = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 21;BA.debugLine="Private wvDetail As WebView";
-mostCurrent._wvdetail = new anywheresoftware.b4a.objects.WebViewWrapper();
- //BA.debugLineNum = 22;BA.debugLine="End Sub";
-return "";
-}
-public static String  _process_globals() throws Exception{
- //BA.debugLineNum = 6;BA.debugLine="Sub Process_Globals";
- //BA.debugLineNum = 10;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5636099;
+ //BA.debugLineNum = 5636099;BA.debugLine="End Sub";
 return "";
 }
 }

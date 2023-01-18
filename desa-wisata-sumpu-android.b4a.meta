@@ -31,6 +31,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=Visual Designer,ItemRG.bal,-100,1,Visual Designer,ListDesign.bal,-100,5,MapsEV,btnObj_Click,146,0,MapsEV,BtnBack_Click,107,0,Visual Designer,MapsEV.bal,-100,1,Visual Designer,Detail.bal,-100,5,Visual Designer,DetailItem.bal,-100,2,Main,Activity_Create,47,0,Main,Globals,26,0,Main,Process_Globals,21,1
+NavigationStack=Visual Designer,MapsEV.bal,-100,1,Visual Designer,Detail.bal,-100,5,Visual Designer,DetailItem.bal,-100,2,Main,Activity_Create,47,0,ListRG,Globals,23,0,Main,BtnVisitor_Click,79,0,Main,CheckLogin,86,0,Main,JobDone,137,0,Main,Globals,28,0,Main,Process_Globals,17,1
 SelectedBuild=0
 VisibleModules=10,5,7,9,8

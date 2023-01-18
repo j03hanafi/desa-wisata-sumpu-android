@@ -10,7 +10,7 @@ public class b4xsearchtemplate extends B4AClass.ImplB4AClass implements BA.SubDe
     private static java.util.HashMap<String, java.lang.reflect.Method> htSubs;
     private void innerInitialize(BA _ba) throws Exception {
         if (ba == null) {
-            ba = new BA(_ba, this, htSubs, "b4a.DesaWisataSumpu.b4xsearchtemplate");
+            ba = new anywheresoftware.b4a.ShellBA(_ba, this, htSubs, "b4a.DesaWisataSumpu.b4xsearchtemplate");
             if (htSubs == null) {
                 ba.loadHtSubs(this.getClass());
                 htSubs = ba.htSubs;
@@ -23,7 +23,14 @@ public class b4xsearchtemplate extends B4AClass.ImplB4AClass implements BA.SubDe
             ba.raiseEvent2(null, true, "class_globals", false);
     }
 
- public anywheresoftware.b4a.keywords.Common __c = null;
+ 
+    public void  innerInitializeHelper(anywheresoftware.b4a.BA _ba) throws Exception{
+        innerInitialize(_ba);
+    }
+    public Object callSub(String sub, Object sender, Object[] args) throws Exception {
+        return BA.SubDelegator.SubNotFound;
+    }
+public anywheresoftware.b4a.keywords.Common __c = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper _mbase = null;
 public b4a.example3.customlistview _customlistview1 = null;
@@ -57,238 +64,529 @@ public b4a.DesaWisataSumpu.listev _listev = null;
 public b4a.DesaWisataSumpu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSumpu.b4xcollections _b4xcollections = null;
 public b4a.DesaWisataSumpu.xuiviewsutils _xuiviewsutils = null;
-public String  _additemstolist(anywheresoftware.b4a.objects.collections.List _li,String _full) throws Exception{
+public anywheresoftware.b4a.objects.B4XViewWrapper  _getpanel(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,b4a.DesaWisataSumpu.b4xdialog _dialog) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "getpanel", true))
+	 {return ((anywheresoftware.b4a.objects.B4XViewWrapper) Debug.delegate(ba, "getpanel", new Object[] {_dialog}));}
+RDebugUtils.currentLine=32636928;
+ //BA.debugLineNum = 32636928;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
+RDebugUtils.currentLine=32636929;
+ //BA.debugLineNum = 32636929;BA.debugLine="Return mBase";
+if (true) return __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ;
+RDebugUtils.currentLine=32636930;
+ //BA.debugLineNum = 32636930;BA.debugLine="End Sub";
+return null;
+}
+public void  _show(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,b4a.DesaWisataSumpu.b4xdialog _dialog) throws Exception{
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "show", true))
+	 {Debug.delegate(ba, "show", new Object[] {_dialog}); return;}
+ResumableSub_Show rsub = new ResumableSub_Show(this,__ref,_dialog);
+rsub.resume(ba, null);
+}
+public static class ResumableSub_Show extends BA.ResumableSub {
+public ResumableSub_Show(b4a.DesaWisataSumpu.b4xsearchtemplate parent,b4a.DesaWisataSumpu.b4xsearchtemplate __ref,b4a.DesaWisataSumpu.b4xdialog _dialog) {
+this.parent = parent;
+this.__ref = __ref;
+this._dialog = _dialog;
+this.__ref = parent;
+}
+b4a.DesaWisataSumpu.b4xsearchtemplate __ref;
+b4a.DesaWisataSumpu.b4xsearchtemplate parent;
+b4a.DesaWisataSumpu.b4xdialog _dialog;
+
+@Override
+public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="b4xsearchtemplate";
+
+    while (true) {
+        switch (state) {
+            case -1:
+return;
+
+case 0:
+//C
+this.state = -1;
+RDebugUtils.currentLine=32702465;
+ //BA.debugLineNum = 32702465;BA.debugLine="xDialog = Dialog";
+__ref._xdialog /*b4a.DesaWisataSumpu.b4xdialog*/  = _dialog;
+RDebugUtils.currentLine=32702466;
+ //BA.debugLineNum = 32702466;BA.debugLine="xDialog.PutAtTop = xui.IsB4A Or xui.IsB4i";
+__ref._xdialog /*b4a.DesaWisataSumpu.b4xdialog*/ ._putattop /*boolean*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4A() || __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4i();
+RDebugUtils.currentLine=32702467;
+ //BA.debugLineNum = 32702467;BA.debugLine="CustomListView1.AsView.Color = xui.Color_Transpar";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._asview().setColor(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Transparent);
+RDebugUtils.currentLine=32702468;
+ //BA.debugLineNum = 32702468;BA.debugLine="CustomListView1.sv.Color = xui.Color_Transparent";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._sv.setColor(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Transparent);
+RDebugUtils.currentLine=32702469;
+ //BA.debugLineNum = 32702469;BA.debugLine="mBase.Color = xui.Color_Transparent";
+__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setColor(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Transparent);
+RDebugUtils.currentLine=32702470;
+ //BA.debugLineNum = 32702470;BA.debugLine="Sleep(20)";
+parent.__c.Sleep(ba,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "b4xsearchtemplate", "show"),(int) (20));
+this.state = 1;
+return;
+case 1:
+//C
+this.state = -1;
+;
+RDebugUtils.currentLine=32702471;
+ //BA.debugLineNum = 32702471;BA.debugLine="Update(\"\", True)";
+__ref._update /*String*/ (null,"",parent.__c.True);
+RDebugUtils.currentLine=32702472;
+ //BA.debugLineNum = 32702472;BA.debugLine="CustomListView1.JumpToItem(0)";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._jumptoitem((int) (0));
+RDebugUtils.currentLine=32702473;
+ //BA.debugLineNum = 32702473;BA.debugLine="SearchField.Text = \"\"";
+__ref._searchfield /*b4a.DesaWisataSumpu.b4xfloattextfield*/ ._settext /*String*/ (null,"");
+RDebugUtils.currentLine=32702474;
+ //BA.debugLineNum = 32702474;BA.debugLine="SearchField.TextField.RequestFocus";
+__ref._searchfield /*b4a.DesaWisataSumpu.b4xfloattextfield*/ ._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ (null).RequestFocus();
+RDebugUtils.currentLine=32702476;
+ //BA.debugLineNum = 32702476;BA.debugLine="IME.ShowKeyboard(SearchField.TextField)";
+__ref._ime /*anywheresoftware.b4a.objects.IME*/ .ShowKeyboard((android.view.View)(__ref._searchfield /*b4a.DesaWisataSumpu.b4xfloattextfield*/ ._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ (null).getObject()));
+RDebugUtils.currentLine=32702478;
+ //BA.debugLineNum = 32702478;BA.debugLine="End Sub";
+if (true) break;
+
+            }
+        }
+    }
+}
+public String  _dialogclosed(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,int _result) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "dialogclosed", true))
+	 {return ((String) Debug.delegate(ba, "dialogclosed", new Object[] {_result}));}
+RDebugUtils.currentLine=33226752;
+ //BA.debugLineNum = 33226752;BA.debugLine="Private Sub DialogClosed(Result As Int) 'ignore";
+RDebugUtils.currentLine=33226754;
+ //BA.debugLineNum = 33226754;BA.debugLine="End Sub";
+return "";
+}
+public String  _additemstolist(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,anywheresoftware.b4a.objects.collections.List _li,String _full) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "additemstolist", true))
+	 {return ((String) Debug.delegate(ba, "additemstolist", new Object[] {_li,_full}));}
 int _i = 0;
 String _item = "";
 int _x = 0;
 int _pnlcolor = 0;
 anywheresoftware.b4a.objects.CSBuilder _cs = null;
 anywheresoftware.b4a.objects.B4XViewWrapper _p = null;
- //BA.debugLineNum = 128;BA.debugLine="Private Sub AddItemsToList(li As List, full As Str";
- //BA.debugLineNum = 129;BA.debugLine="If li.IsInitialized = False Then Return";
+RDebugUtils.currentLine=33030144;
+ //BA.debugLineNum = 33030144;BA.debugLine="Private Sub AddItemsToList(li As List, full As Str";
+RDebugUtils.currentLine=33030145;
+ //BA.debugLineNum = 33030145;BA.debugLine="If li.IsInitialized = False Then Return";
 if (_li.IsInitialized()==__c.False) { 
 if (true) return "";};
- //BA.debugLineNum = 134;BA.debugLine="For i = 0 To li.Size - 1";
+RDebugUtils.currentLine=33030150;
+ //BA.debugLineNum = 33030150;BA.debugLine="For i = 0 To li.Size - 1";
 {
 final int step2 = 1;
 final int limit2 = (int) (_li.getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit2 ;_i = _i + step2 ) {
- //BA.debugLineNum = 135;BA.debugLine="If CustomListView1.Size >= MaxNumberOfItemsToSho";
-if (_customlistview1._getsize()>=_maxnumberofitemstoshow) { 
+RDebugUtils.currentLine=33030151;
+ //BA.debugLineNum = 33030151;BA.debugLine="If CustomListView1.Size >= MaxNumberOfItemsToSho";
+if (__ref._customlistview1 /*b4a.example3.customlistview*/ ._getsize()>=__ref._maxnumberofitemstoshow /*int*/ ) { 
 if (true) return "";};
- //BA.debugLineNum = 136;BA.debugLine="Dim item As String = li.Get(i)";
+RDebugUtils.currentLine=33030152;
+ //BA.debugLineNum = 33030152;BA.debugLine="Dim item As String = li.Get(i)";
 _item = BA.ObjectToString(_li.Get(_i));
- //BA.debugLineNum = 137;BA.debugLine="Dim x As Int = item.ToLowerCase.IndexOf(full)";
+RDebugUtils.currentLine=33030153;
+ //BA.debugLineNum = 33030153;BA.debugLine="Dim x As Int = item.ToLowerCase.IndexOf(full)";
 _x = _item.toLowerCase().indexOf(_full);
- //BA.debugLineNum = 138;BA.debugLine="If x = -1 Then";
+RDebugUtils.currentLine=33030154;
+ //BA.debugLineNum = 33030154;BA.debugLine="If x = -1 Then";
 if (_x==-1) { 
- //BA.debugLineNum = 139;BA.debugLine="Continue";
+RDebugUtils.currentLine=33030155;
+ //BA.debugLineNum = 33030155;BA.debugLine="Continue";
 if (true) continue;
  };
- //BA.debugLineNum = 141;BA.debugLine="Dim pnlColor As Int";
+RDebugUtils.currentLine=33030157;
+ //BA.debugLineNum = 33030157;BA.debugLine="Dim pnlColor As Int";
 _pnlcolor = 0;
- //BA.debugLineNum = 142;BA.debugLine="If CustomListView1.Size = 0 And full.Length > 0";
-if (_customlistview1._getsize()==0 && _full.length()>0 && _allowunlistedtext==__c.False) { 
- //BA.debugLineNum = 143;BA.debugLine="pnlColor = ItemHightlightColor";
-_pnlcolor = _itemhightlightcolor;
+RDebugUtils.currentLine=33030158;
+ //BA.debugLineNum = 33030158;BA.debugLine="If CustomListView1.Size = 0 And full.Length > 0";
+if (__ref._customlistview1 /*b4a.example3.customlistview*/ ._getsize()==0 && _full.length()>0 && __ref._allowunlistedtext /*boolean*/ ==__c.False) { 
+RDebugUtils.currentLine=33030159;
+ //BA.debugLineNum = 33030159;BA.debugLine="pnlColor = ItemHightlightColor";
+_pnlcolor = __ref._itemhightlightcolor /*int*/ ;
  }else {
- //BA.debugLineNum = 145;BA.debugLine="pnlColor = CustomListView1.DefaultTextBackgroun";
-_pnlcolor = _customlistview1._defaulttextbackgroundcolor;
+RDebugUtils.currentLine=33030161;
+ //BA.debugLineNum = 33030161;BA.debugLine="pnlColor = CustomListView1.DefaultTextBackgroun";
+_pnlcolor = __ref._customlistview1 /*b4a.example3.customlistview*/ ._defaulttextbackgroundcolor;
  };
- //BA.debugLineNum = 148;BA.debugLine="Dim cs As CSBuilder";
+RDebugUtils.currentLine=33030164;
+ //BA.debugLineNum = 33030164;BA.debugLine="Dim cs As CSBuilder";
 _cs = new anywheresoftware.b4a.objects.CSBuilder();
- //BA.debugLineNum = 149;BA.debugLine="cs.Initialize.Append(item.SubString2(0, x)).Colo";
-_cs.Initialize().Append(BA.ObjectToCharSequence(_item.substring((int) (0),_x))).Color(_texthighlightcolor).Append(BA.ObjectToCharSequence(_item.substring(_x,(int) (_x+_full.length())))).Pop();
- //BA.debugLineNum = 150;BA.debugLine="cs.Append(item.SubString(x + full.Length))";
+RDebugUtils.currentLine=33030165;
+ //BA.debugLineNum = 33030165;BA.debugLine="cs.Initialize.Append(item.SubString2(0, x)).Colo";
+_cs.Initialize().Append(BA.ObjectToCharSequence(_item.substring((int) (0),_x))).Color(__ref._texthighlightcolor /*int*/ ).Append(BA.ObjectToCharSequence(_item.substring(_x,(int) (_x+_full.length())))).Pop();
+RDebugUtils.currentLine=33030166;
+ //BA.debugLineNum = 33030166;BA.debugLine="cs.Append(item.SubString(x + full.Length))";
 _cs.Append(BA.ObjectToCharSequence(_item.substring((int) (_x+_full.length()))));
- //BA.debugLineNum = 151;BA.debugLine="If ItemsCache.Size > 0 Then";
-if (_itemscache.getSize()>0) { 
- //BA.debugLineNum = 152;BA.debugLine="Dim p As B4XView = ItemsCache.Get(ItemsCache.Si";
+RDebugUtils.currentLine=33030167;
+ //BA.debugLineNum = 33030167;BA.debugLine="If ItemsCache.Size > 0 Then";
+if (__ref._itemscache /*anywheresoftware.b4a.objects.collections.List*/ .getSize()>0) { 
+RDebugUtils.currentLine=33030168;
+ //BA.debugLineNum = 33030168;BA.debugLine="Dim p As B4XView = ItemsCache.Get(ItemsCache.Si";
 _p = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_p = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_itemscache.Get((int) (_itemscache.getSize()-1))));
- //BA.debugLineNum = 153;BA.debugLine="ItemsCache.RemoveAt(ItemsCache.Size - 1)";
-_itemscache.RemoveAt((int) (_itemscache.getSize()-1));
- //BA.debugLineNum = 155;BA.debugLine="p.GetView(0).Text = cs";
+_p = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(__ref._itemscache /*anywheresoftware.b4a.objects.collections.List*/ .Get((int) (__ref._itemscache /*anywheresoftware.b4a.objects.collections.List*/ .getSize()-1))));
+RDebugUtils.currentLine=33030169;
+ //BA.debugLineNum = 33030169;BA.debugLine="ItemsCache.RemoveAt(ItemsCache.Size - 1)";
+__ref._itemscache /*anywheresoftware.b4a.objects.collections.List*/ .RemoveAt((int) (__ref._itemscache /*anywheresoftware.b4a.objects.collections.List*/ .getSize()-1));
+RDebugUtils.currentLine=33030171;
+ //BA.debugLineNum = 33030171;BA.debugLine="p.GetView(0).Text = cs";
 _p.GetView((int) (0)).setText(BA.ObjectToCharSequence(_cs.getObject()));
- //BA.debugLineNum = 160;BA.debugLine="p.Color = pnlColor";
+RDebugUtils.currentLine=33030176;
+ //BA.debugLineNum = 33030176;BA.debugLine="p.Color = pnlColor";
 _p.setColor(_pnlcolor);
- //BA.debugLineNum = 161;BA.debugLine="CustomListView1.Add(p, item)";
-_customlistview1._add(_p,(Object)(_item));
+RDebugUtils.currentLine=33030177;
+ //BA.debugLineNum = 33030177;BA.debugLine="CustomListView1.Add(p, item)";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._add(_p,(Object)(_item));
  }else {
- //BA.debugLineNum = 163;BA.debugLine="CustomListView1.AddTextItem(cs, item)";
-_customlistview1._addtextitem((Object)(_cs.getObject()),(Object)(_item));
+RDebugUtils.currentLine=33030179;
+ //BA.debugLineNum = 33030179;BA.debugLine="CustomListView1.AddTextItem(cs, item)";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._addtextitem((Object)(_cs.getObject()),(Object)(_item));
  };
  }
 };
- //BA.debugLineNum = 184;BA.debugLine="For i = 0 To li.Size - 1";
+RDebugUtils.currentLine=33030200;
+ //BA.debugLineNum = 33030200;BA.debugLine="For i = 0 To li.Size - 1";
 {
 final int step28 = 1;
 final int limit28 = (int) (_li.getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit28 ;_i = _i + step28 ) {
- //BA.debugLineNum = 185;BA.debugLine="Dim item As String = li.Get(i)";
+RDebugUtils.currentLine=33030201;
+ //BA.debugLineNum = 33030201;BA.debugLine="Dim item As String = li.Get(i)";
 _item = BA.ObjectToString(_li.Get(_i));
- //BA.debugLineNum = 186;BA.debugLine="Dim x As Int = item.ToLowerCase.IndexOf(full)";
+RDebugUtils.currentLine=33030202;
+ //BA.debugLineNum = 33030202;BA.debugLine="Dim x As Int = item.ToLowerCase.IndexOf(full)";
 _x = _item.toLowerCase().indexOf(_full);
- //BA.debugLineNum = 187;BA.debugLine="If x = -1 Then";
+RDebugUtils.currentLine=33030203;
+ //BA.debugLineNum = 33030203;BA.debugLine="If x = -1 Then";
 if (_x==-1) { 
- //BA.debugLineNum = 188;BA.debugLine="Continue";
+RDebugUtils.currentLine=33030204;
+ //BA.debugLineNum = 33030204;BA.debugLine="Continue";
 if (true) continue;
  };
  }
 };
- //BA.debugLineNum = 191;BA.debugLine="End Sub";
+RDebugUtils.currentLine=33030207;
+ //BA.debugLineNum = 33030207;BA.debugLine="End Sub";
 return "";
 }
-public String  _class_globals() throws Exception{
- //BA.debugLineNum = 1;BA.debugLine="Sub Class_Globals";
- //BA.debugLineNum = 2;BA.debugLine="Private xui As XUI";
+public String  _class_globals(b4a.DesaWisataSumpu.b4xsearchtemplate __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+RDebugUtils.currentLine=32440320;
+ //BA.debugLineNum = 32440320;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=32440321;
+ //BA.debugLineNum = 32440321;BA.debugLine="Private xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
- //BA.debugLineNum = 3;BA.debugLine="Public mBase As B4XView";
+RDebugUtils.currentLine=32440322;
+ //BA.debugLineNum = 32440322;BA.debugLine="Public mBase As B4XView";
 _mbase = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 4;BA.debugLine="Public CustomListView1 As CustomListView";
+RDebugUtils.currentLine=32440323;
+ //BA.debugLineNum = 32440323;BA.debugLine="Public CustomListView1 As CustomListView";
 _customlistview1 = new b4a.example3.customlistview();
- //BA.debugLineNum = 5;BA.debugLine="Private xDialog As B4XDialog";
+RDebugUtils.currentLine=32440324;
+ //BA.debugLineNum = 32440324;BA.debugLine="Private xDialog As B4XDialog";
 _xdialog = new b4a.DesaWisataSumpu.b4xdialog();
- //BA.debugLineNum = 6;BA.debugLine="Public SearchField As B4XFloatTextField";
+RDebugUtils.currentLine=32440325;
+ //BA.debugLineNum = 32440325;BA.debugLine="Public SearchField As B4XFloatTextField";
 _searchfield = new b4a.DesaWisataSumpu.b4xfloattextfield();
- //BA.debugLineNum = 7;BA.debugLine="Private prefixList As Map";
+RDebugUtils.currentLine=32440326;
+ //BA.debugLineNum = 32440326;BA.debugLine="Private prefixList As Map";
 _prefixlist = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 8;BA.debugLine="Private substringList As Map";
+RDebugUtils.currentLine=32440327;
+ //BA.debugLineNum = 32440327;BA.debugLine="Private substringList As Map";
 _substringlist = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 9;BA.debugLine="Public TextHighlightColor As Int = 0xFFFD5C5C";
+RDebugUtils.currentLine=32440328;
+ //BA.debugLineNum = 32440328;BA.debugLine="Public TextHighlightColor As Int = 0xFFFD5C5C";
 _texthighlightcolor = ((int)0xfffd5c5c);
- //BA.debugLineNum = 10;BA.debugLine="Public ItemHightlightColor As Int = 0x7E008EFF";
+RDebugUtils.currentLine=32440329;
+ //BA.debugLineNum = 32440329;BA.debugLine="Public ItemHightlightColor As Int = 0x7E008EFF";
 _itemhightlightcolor = ((int)0x7e008eff);
- //BA.debugLineNum = 11;BA.debugLine="Private MAX_LIMIT = 4 As Int";
+RDebugUtils.currentLine=32440330;
+ //BA.debugLineNum = 32440330;BA.debugLine="Private MAX_LIMIT = 4 As Int";
 _max_limit = (int) (4);
- //BA.debugLineNum = 12;BA.debugLine="Public MaxNumberOfItemsToShow As Int = 100";
+RDebugUtils.currentLine=32440331;
+ //BA.debugLineNum = 32440331;BA.debugLine="Public MaxNumberOfItemsToShow As Int = 100";
 _maxnumberofitemstoshow = (int) (100);
- //BA.debugLineNum = 13;BA.debugLine="Private ItemsCache As List";
+RDebugUtils.currentLine=32440332;
+ //BA.debugLineNum = 32440332;BA.debugLine="Private ItemsCache As List";
 _itemscache = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 14;BA.debugLine="Private AllItems As List";
+RDebugUtils.currentLine=32440333;
+ //BA.debugLineNum = 32440333;BA.debugLine="Private AllItems As List";
 _allitems = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 15;BA.debugLine="Public SelectedItem As String";
+RDebugUtils.currentLine=32440334;
+ //BA.debugLineNum = 32440334;BA.debugLine="Public SelectedItem As String";
 _selecteditem = "";
- //BA.debugLineNum = 16;BA.debugLine="Private LastTerm As String";
+RDebugUtils.currentLine=32440335;
+ //BA.debugLineNum = 32440335;BA.debugLine="Private LastTerm As String";
 _lastterm = "";
- //BA.debugLineNum = 18;BA.debugLine="Private IME As IME";
+RDebugUtils.currentLine=32440337;
+ //BA.debugLineNum = 32440337;BA.debugLine="Private IME As IME";
 _ime = new anywheresoftware.b4a.objects.IME();
- //BA.debugLineNum = 20;BA.debugLine="Public AllowUnlistedText As Boolean";
+RDebugUtils.currentLine=32440339;
+ //BA.debugLineNum = 32440339;BA.debugLine="Public AllowUnlistedText As Boolean";
 _allowunlistedtext = false;
- //BA.debugLineNum = 21;BA.debugLine="Public PrefixOnly As Boolean";
+RDebugUtils.currentLine=32440340;
+ //BA.debugLineNum = 32440340;BA.debugLine="Public PrefixOnly As Boolean";
 _prefixonly = false;
- //BA.debugLineNum = 22;BA.debugLine="End Sub";
+RDebugUtils.currentLine=32440341;
+ //BA.debugLineNum = 32440341;BA.debugLine="End Sub";
 return "";
 }
-public String  _customlistview1_itemclick(int _index,Object _value) throws Exception{
- //BA.debugLineNum = 122;BA.debugLine="Private Sub CustomListView1_ItemClick (Index As In";
- //BA.debugLineNum = 123;BA.debugLine="If Value = \"\" Then Return";
+public String  _customlistview1_itemclick(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,int _index,Object _value) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "customlistview1_itemclick", true))
+	 {return ((String) Debug.delegate(ba, "customlistview1_itemclick", new Object[] {_index,_value}));}
+RDebugUtils.currentLine=32964608;
+ //BA.debugLineNum = 32964608;BA.debugLine="Private Sub CustomListView1_ItemClick (Index As In";
+RDebugUtils.currentLine=32964609;
+ //BA.debugLineNum = 32964609;BA.debugLine="If Value = \"\" Then Return";
 if ((_value).equals((Object)(""))) { 
 if (true) return "";};
- //BA.debugLineNum = 124;BA.debugLine="SelectedItem = Value";
-_selecteditem = BA.ObjectToString(_value);
- //BA.debugLineNum = 125;BA.debugLine="xDialog.Close(xui.DialogResponse_Positive)";
-_xdialog._close /*boolean*/ (_xui.DialogResponse_Positive);
- //BA.debugLineNum = 126;BA.debugLine="End Sub";
+RDebugUtils.currentLine=32964610;
+ //BA.debugLineNum = 32964610;BA.debugLine="SelectedItem = Value";
+__ref._selecteditem /*String*/  = BA.ObjectToString(_value);
+RDebugUtils.currentLine=32964611;
+ //BA.debugLineNum = 32964611;BA.debugLine="xDialog.Close(xui.DialogResponse_Positive)";
+__ref._xdialog /*b4a.DesaWisataSumpu.b4xdialog*/ ._close /*boolean*/ (null,__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .DialogResponse_Positive);
+RDebugUtils.currentLine=32964612;
+ //BA.debugLineNum = 32964612;BA.debugLine="End Sub";
 return "";
 }
-public String  _dialogclosed(int _result) throws Exception{
- //BA.debugLineNum = 241;BA.debugLine="Private Sub DialogClosed(Result As Int) 'ignore";
- //BA.debugLineNum = 243;BA.debugLine="End Sub";
-return "";
-}
-public anywheresoftware.b4a.objects.B4XViewWrapper  _getpanel(b4a.DesaWisataSumpu.b4xdialog _dialog) throws Exception{
- //BA.debugLineNum = 61;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
- //BA.debugLineNum = 62;BA.debugLine="Return mBase";
-if (true) return _mbase;
- //BA.debugLineNum = 63;BA.debugLine="End Sub";
-return null;
-}
-public String  _initialize(anywheresoftware.b4a.BA _ba) throws Exception{
+public String  _initialize(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,anywheresoftware.b4a.BA _ba) throws Exception{
+__ref = this;
 innerInitialize(_ba);
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "initialize", true))
+	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
 int _height = 0;
 anywheresoftware.b4j.object.JavaObject _jo = null;
- //BA.debugLineNum = 24;BA.debugLine="Public Sub Initialize";
- //BA.debugLineNum = 25;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
-_mbase = _xui.CreatePanel(ba,"mBase");
- //BA.debugLineNum = 27;BA.debugLine="Dim height As Int";
+RDebugUtils.currentLine=32505856;
+ //BA.debugLineNum = 32505856;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=32505857;
+ //BA.debugLineNum = 32505857;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
+__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .CreatePanel(ba,"mBase");
+RDebugUtils.currentLine=32505859;
+ //BA.debugLineNum = 32505859;BA.debugLine="Dim height As Int";
 _height = 0;
- //BA.debugLineNum = 28;BA.debugLine="If xui.IsB4A Or xui.IsB4i Then height = 220dip El";
-if (_xui.getIsB4A() || _xui.getIsB4i()) { 
+RDebugUtils.currentLine=32505860;
+ //BA.debugLineNum = 32505860;BA.debugLine="If xui.IsB4A Or xui.IsB4i Then height = 220dip El";
+if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4A() || __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4i()) { 
 _height = __c.DipToCurrent((int) (220));}
 else {
 _height = __c.DipToCurrent((int) (300));};
- //BA.debugLineNum = 29;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, height)";
-_mbase.SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),_height);
- //BA.debugLineNum = 30;BA.debugLine="mBase.LoadLayout(\"SearchTemplate\")";
-_mbase.LoadLayout("SearchTemplate",ba);
- //BA.debugLineNum = 31;BA.debugLine="mBase.SetColorAndBorder(xui.Color_Transparent, 0,";
-_mbase.SetColorAndBorder(_xui.Color_Transparent,(int) (0),(int) (0),(int) (0));
- //BA.debugLineNum = 32;BA.debugLine="CustomListView1.sv.SetColorAndBorder(xui.Color_Tr";
-_customlistview1._sv.SetColorAndBorder(_xui.Color_Transparent,(int) (0),(int) (0),(int) (0));
- //BA.debugLineNum = 33;BA.debugLine="CustomListView1.DefaultTextBackgroundColor = 0xFF";
-_customlistview1._defaulttextbackgroundcolor = ((int)0xff555555);
- //BA.debugLineNum = 34;BA.debugLine="CustomListView1.DefaultTextColor = xui.Color_Whit";
-_customlistview1._defaulttextcolor = _xui.Color_White;
- //BA.debugLineNum = 44;BA.debugLine="ItemsCache.Initialize";
-_itemscache.Initialize();
- //BA.debugLineNum = 45;BA.debugLine="prefixList.Initialize";
-_prefixlist.Initialize();
- //BA.debugLineNum = 46;BA.debugLine="substringList.Initialize";
-_substringlist.Initialize();
- //BA.debugLineNum = 48;BA.debugLine="IME.Initialize(\"\")";
-_ime.Initialize("");
- //BA.debugLineNum = 49;BA.debugLine="Dim jo As JavaObject = SearchField.TextField";
+RDebugUtils.currentLine=32505861;
+ //BA.debugLineNum = 32505861;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, height)";
+__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),_height);
+RDebugUtils.currentLine=32505862;
+ //BA.debugLineNum = 32505862;BA.debugLine="mBase.LoadLayout(\"SearchTemplate\")";
+__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .LoadLayout("SearchTemplate",ba);
+RDebugUtils.currentLine=32505863;
+ //BA.debugLineNum = 32505863;BA.debugLine="mBase.SetColorAndBorder(xui.Color_Transparent, 0,";
+__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetColorAndBorder(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Transparent,(int) (0),(int) (0),(int) (0));
+RDebugUtils.currentLine=32505864;
+ //BA.debugLineNum = 32505864;BA.debugLine="CustomListView1.sv.SetColorAndBorder(xui.Color_Tr";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._sv.SetColorAndBorder(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Transparent,(int) (0),(int) (0),(int) (0));
+RDebugUtils.currentLine=32505865;
+ //BA.debugLineNum = 32505865;BA.debugLine="CustomListView1.DefaultTextBackgroundColor = 0xFF";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._defaulttextbackgroundcolor = ((int)0xff555555);
+RDebugUtils.currentLine=32505866;
+ //BA.debugLineNum = 32505866;BA.debugLine="CustomListView1.DefaultTextColor = xui.Color_Whit";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._defaulttextcolor = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_White;
+RDebugUtils.currentLine=32505876;
+ //BA.debugLineNum = 32505876;BA.debugLine="ItemsCache.Initialize";
+__ref._itemscache /*anywheresoftware.b4a.objects.collections.List*/ .Initialize();
+RDebugUtils.currentLine=32505877;
+ //BA.debugLineNum = 32505877;BA.debugLine="prefixList.Initialize";
+__ref._prefixlist /*anywheresoftware.b4a.objects.collections.Map*/ .Initialize();
+RDebugUtils.currentLine=32505878;
+ //BA.debugLineNum = 32505878;BA.debugLine="substringList.Initialize";
+__ref._substringlist /*anywheresoftware.b4a.objects.collections.Map*/ .Initialize();
+RDebugUtils.currentLine=32505880;
+ //BA.debugLineNum = 32505880;BA.debugLine="IME.Initialize(\"\")";
+__ref._ime /*anywheresoftware.b4a.objects.IME*/ .Initialize("");
+RDebugUtils.currentLine=32505881;
+ //BA.debugLineNum = 32505881;BA.debugLine="Dim jo As JavaObject = SearchField.TextField";
 _jo = new anywheresoftware.b4j.object.JavaObject();
-_jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_searchfield._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ().getObject()));
- //BA.debugLineNum = 50;BA.debugLine="jo.RunMethod(\"setImeOptions\", Array(Bit.Or(335544";
+_jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(__ref._searchfield /*b4a.DesaWisataSumpu.b4xfloattextfield*/ ._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ (null).getObject()));
+RDebugUtils.currentLine=32505882;
+ //BA.debugLineNum = 32505882;BA.debugLine="jo.RunMethod(\"setImeOptions\", Array(Bit.Or(335544";
 _jo.RunMethod("setImeOptions",new Object[]{(Object)(__c.Bit.Or((int) (33554432),(int) (6)))});
- //BA.debugLineNum = 52;BA.debugLine="End Sub";
+RDebugUtils.currentLine=32505884;
+ //BA.debugLineNum = 32505884;BA.debugLine="End Sub";
 return "";
 }
-public String  _resize(int _width,int _height) throws Exception{
+public String  _resize(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,int _width,int _height) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "resize", true))
+	 {return ((String) Debug.delegate(ba, "resize", new Object[] {_width,_height}));}
 anywheresoftware.b4a.objects.B4XViewWrapper _c = null;
- //BA.debugLineNum = 54;BA.debugLine="Public Sub Resize(Width As Int, Height As Int)";
- //BA.debugLineNum = 55;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, Width, Height)";
-_mbase.SetLayoutAnimated((int) (0),(int) (0),(int) (0),_width,_height);
- //BA.debugLineNum = 56;BA.debugLine="Dim c As B4XView = CustomListView1.AsView";
+RDebugUtils.currentLine=32571392;
+ //BA.debugLineNum = 32571392;BA.debugLine="Public Sub Resize(Width As Int, Height As Int)";
+RDebugUtils.currentLine=32571393;
+ //BA.debugLineNum = 32571393;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, Width, Height)";
+__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),(int) (0),(int) (0),_width,_height);
+RDebugUtils.currentLine=32571394;
+ //BA.debugLineNum = 32571394;BA.debugLine="Dim c As B4XView = CustomListView1.AsView";
 _c = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_c = _customlistview1._asview();
- //BA.debugLineNum = 57;BA.debugLine="c.SetLayoutAnimated(0, 0, c.Top, Width, Height -";
+_c = __ref._customlistview1 /*b4a.example3.customlistview*/ ._asview();
+RDebugUtils.currentLine=32571395;
+ //BA.debugLineNum = 32571395;BA.debugLine="c.SetLayoutAnimated(0, 0, c.Top, Width, Height -";
 _c.SetLayoutAnimated((int) (0),(int) (0),_c.getTop(),_width,(int) (_height-_c.getTop()));
- //BA.debugLineNum = 58;BA.debugLine="CustomListView1.Base_Resize(Width, c.Height)";
-_customlistview1._base_resize(_width,_c.getHeight());
- //BA.debugLineNum = 59;BA.debugLine="End Sub";
+RDebugUtils.currentLine=32571396;
+ //BA.debugLineNum = 32571396;BA.debugLine="CustomListView1.Base_Resize(Width, c.Height)";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._base_resize(_width,_c.getHeight());
+RDebugUtils.currentLine=32571397;
+ //BA.debugLineNum = 32571397;BA.debugLine="End Sub";
 return "";
 }
-public String  _searchfield_enterpressed() throws Exception{
- //BA.debugLineNum = 112;BA.debugLine="Private Sub SearchField_EnterPressed";
- //BA.debugLineNum = 113;BA.debugLine="If AllowUnlistedText Then";
-if (_allowunlistedtext) { 
- //BA.debugLineNum = 114;BA.debugLine="SelectedItem = LastTerm";
-_selecteditem = _lastterm;
- //BA.debugLineNum = 115;BA.debugLine="xDialog.Close(xui.DialogResponse_Positive)";
-_xdialog._close /*boolean*/ (_xui.DialogResponse_Positive);
- }else if(_customlistview1._getsize()>0 && _lastterm.length()>0) { 
- //BA.debugLineNum = 117;BA.debugLine="CustomListView1_ItemClick(0, CustomListView1.Get";
-_customlistview1_itemclick((int) (0),_customlistview1._getvalue((int) (0)));
+public String  _searchfield_enterpressed(b4a.DesaWisataSumpu.b4xsearchtemplate __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "searchfield_enterpressed", true))
+	 {return ((String) Debug.delegate(ba, "searchfield_enterpressed", null));}
+RDebugUtils.currentLine=32899072;
+ //BA.debugLineNum = 32899072;BA.debugLine="Private Sub SearchField_EnterPressed";
+RDebugUtils.currentLine=32899073;
+ //BA.debugLineNum = 32899073;BA.debugLine="If AllowUnlistedText Then";
+if (__ref._allowunlistedtext /*boolean*/ ) { 
+RDebugUtils.currentLine=32899074;
+ //BA.debugLineNum = 32899074;BA.debugLine="SelectedItem = LastTerm";
+__ref._selecteditem /*String*/  = __ref._lastterm /*String*/ ;
+RDebugUtils.currentLine=32899075;
+ //BA.debugLineNum = 32899075;BA.debugLine="xDialog.Close(xui.DialogResponse_Positive)";
+__ref._xdialog /*b4a.DesaWisataSumpu.b4xdialog*/ ._close /*boolean*/ (null,__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .DialogResponse_Positive);
+ }else 
+{RDebugUtils.currentLine=32899076;
+ //BA.debugLineNum = 32899076;BA.debugLine="Else If CustomListView1.Size > 0 And LastTerm.Len";
+if (__ref._customlistview1 /*b4a.example3.customlistview*/ ._getsize()>0 && __ref._lastterm /*String*/ .length()>0) { 
+RDebugUtils.currentLine=32899077;
+ //BA.debugLineNum = 32899077;BA.debugLine="CustomListView1_ItemClick(0, CustomListView1.Get";
+__ref._customlistview1_itemclick /*String*/ (null,(int) (0),__ref._customlistview1 /*b4a.example3.customlistview*/ ._getvalue((int) (0)));
+ }}
+;
+RDebugUtils.currentLine=32899079;
+ //BA.debugLineNum = 32899079;BA.debugLine="End Sub";
+return "";
+}
+public String  _searchfield_textchanged(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,String _old,String _new) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "searchfield_textchanged", true))
+	 {return ((String) Debug.delegate(ba, "searchfield_textchanged", new Object[] {_old,_new}));}
+RDebugUtils.currentLine=32768000;
+ //BA.debugLineNum = 32768000;BA.debugLine="Private Sub SearchField_TextChanged (Old As String";
+RDebugUtils.currentLine=32768001;
+ //BA.debugLineNum = 32768001;BA.debugLine="Update(New, False)";
+__ref._update /*String*/ (null,_new,__c.False);
+RDebugUtils.currentLine=32768002;
+ //BA.debugLineNum = 32768002;BA.debugLine="End Sub";
+return "";
+}
+public String  _update(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,String _term,boolean _force) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "update", true))
+	 {return ((String) Debug.delegate(ba, "update", new Object[] {_term,_force}));}
+int _i = 0;
+anywheresoftware.b4a.objects.B4XViewWrapper _p = null;
+String _str1 = "";
+String _str2 = "";
+RDebugUtils.currentLine=32833536;
+ //BA.debugLineNum = 32833536;BA.debugLine="Private Sub Update(Term As String, Force As Boolea";
+RDebugUtils.currentLine=32833537;
+ //BA.debugLineNum = 32833537;BA.debugLine="If Term = LastTerm And Force = False Then Return";
+if ((_term).equals(__ref._lastterm /*String*/ ) && _force==__c.False) { 
+if (true) return "";};
+RDebugUtils.currentLine=32833538;
+ //BA.debugLineNum = 32833538;BA.debugLine="LastTerm = Term";
+__ref._lastterm /*String*/  = _term;
+RDebugUtils.currentLine=32833539;
+ //BA.debugLineNum = 32833539;BA.debugLine="If xui.IsB4J = False Then";
+if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4J()==__c.False) { 
+RDebugUtils.currentLine=32833540;
+ //BA.debugLineNum = 32833540;BA.debugLine="For i = 0 To CustomListView1.Size - 1";
+{
+final int step4 = 1;
+final int limit4 = (int) (__ref._customlistview1 /*b4a.example3.customlistview*/ ._getsize()-1);
+_i = (int) (0) ;
+for (;_i <= limit4 ;_i = _i + step4 ) {
+RDebugUtils.currentLine=32833541;
+ //BA.debugLineNum = 32833541;BA.debugLine="Dim p As B4XView = CustomListView1.GetPanel(i)";
+_p = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_p = __ref._customlistview1 /*b4a.example3.customlistview*/ ._getpanel(_i);
+RDebugUtils.currentLine=32833542;
+ //BA.debugLineNum = 32833542;BA.debugLine="p.RemoveViewFromParent";
+_p.RemoveViewFromParent();
+RDebugUtils.currentLine=32833543;
+ //BA.debugLineNum = 32833543;BA.debugLine="ItemsCache.Add(p)";
+__ref._itemscache /*anywheresoftware.b4a.objects.collections.List*/ .Add((Object)(_p.getObject()));
+ }
+};
  };
- //BA.debugLineNum = 119;BA.debugLine="End Sub";
+RDebugUtils.currentLine=32833546;
+ //BA.debugLineNum = 32833546;BA.debugLine="CustomListView1.Clear";
+__ref._customlistview1 /*b4a.example3.customlistview*/ ._clear();
+RDebugUtils.currentLine=32833548;
+ //BA.debugLineNum = 32833548;BA.debugLine="Dim str1, str2 As String";
+_str1 = "";
+_str2 = "";
+RDebugUtils.currentLine=32833549;
+ //BA.debugLineNum = 32833549;BA.debugLine="str1 = Term.ToLowerCase";
+_str1 = _term.toLowerCase();
+RDebugUtils.currentLine=32833550;
+ //BA.debugLineNum = 32833550;BA.debugLine="If Term = \"\" Then";
+if ((_term).equals("")) { 
+RDebugUtils.currentLine=32833551;
+ //BA.debugLineNum = 32833551;BA.debugLine="AddItemsToList(AllItems, str1)";
+__ref._additemstolist /*String*/ (null,__ref._allitems /*anywheresoftware.b4a.objects.collections.List*/ ,_str1);
+ }else {
+RDebugUtils.currentLine=32833553;
+ //BA.debugLineNum = 32833553;BA.debugLine="If str1.Length > MAX_LIMIT Then";
+if (_str1.length()>__ref._max_limit /*int*/ ) { 
+RDebugUtils.currentLine=32833554;
+ //BA.debugLineNum = 32833554;BA.debugLine="str2 = str1.SubString2(0, MAX_LIMIT)";
+_str2 = _str1.substring((int) (0),__ref._max_limit /*int*/ );
+ }else {
+RDebugUtils.currentLine=32833556;
+ //BA.debugLineNum = 32833556;BA.debugLine="str2 = str1";
+_str2 = _str1;
+ };
+RDebugUtils.currentLine=32833558;
+ //BA.debugLineNum = 32833558;BA.debugLine="AddItemsToList(prefixList.Get(str2), str1)";
+__ref._additemstolist /*String*/ (null,(anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(__ref._prefixlist /*anywheresoftware.b4a.objects.collections.Map*/ .Get((Object)(_str2)))),_str1);
+RDebugUtils.currentLine=32833559;
+ //BA.debugLineNum = 32833559;BA.debugLine="AddItemsToList(substringList.Get(str2), str1)";
+__ref._additemstolist /*String*/ (null,(anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(__ref._substringlist /*anywheresoftware.b4a.objects.collections.Map*/ .Get((Object)(_str2)))),_str1);
+ };
+RDebugUtils.currentLine=32833561;
+ //BA.debugLineNum = 32833561;BA.debugLine="End Sub";
 return "";
 }
-public String  _searchfield_textchanged(String _old,String _new) throws Exception{
- //BA.debugLineNum = 81;BA.debugLine="Private Sub SearchField_TextChanged (Old As String";
- //BA.debugLineNum = 82;BA.debugLine="Update(New, False)";
-_update(_new,__c.False);
- //BA.debugLineNum = 83;BA.debugLine="End Sub";
-return "";
-}
-public String  _setindex(Object _index) throws Exception{
+public String  _setindex(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,Object _index) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "setindex", true))
+	 {return ((String) Debug.delegate(ba, "setindex", new Object[] {_index}));}
 Object[] _obj = null;
- //BA.debugLineNum = 233;BA.debugLine="Public Sub SetIndex(Index As Object)";
- //BA.debugLineNum = 234;BA.debugLine="Dim obj() As Object";
+RDebugUtils.currentLine=33161216;
+ //BA.debugLineNum = 33161216;BA.debugLine="Public Sub SetIndex(Index As Object)";
+RDebugUtils.currentLine=33161217;
+ //BA.debugLineNum = 33161217;BA.debugLine="Dim obj() As Object";
 _obj = new Object[(int) (0)];
 {
 int d0 = _obj.length;
@@ -297,19 +595,28 @@ _obj[i0] = new Object();
 }
 }
 ;
- //BA.debugLineNum = 235;BA.debugLine="obj = Index";
+RDebugUtils.currentLine=33161218;
+ //BA.debugLineNum = 33161218;BA.debugLine="obj = Index";
 _obj = (Object[])(_index);
- //BA.debugLineNum = 236;BA.debugLine="prefixList = obj(0)";
-_prefixlist = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_obj[(int) (0)]));
- //BA.debugLineNum = 237;BA.debugLine="substringList = obj(1)";
-_substringlist = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_obj[(int) (1)]));
- //BA.debugLineNum = 238;BA.debugLine="Dim AllItems As List = obj(2)";
+RDebugUtils.currentLine=33161219;
+ //BA.debugLineNum = 33161219;BA.debugLine="prefixList = obj(0)";
+__ref._prefixlist /*anywheresoftware.b4a.objects.collections.Map*/  = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_obj[(int) (0)]));
+RDebugUtils.currentLine=33161220;
+ //BA.debugLineNum = 33161220;BA.debugLine="substringList = obj(1)";
+__ref._substringlist /*anywheresoftware.b4a.objects.collections.Map*/  = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_obj[(int) (1)]));
+RDebugUtils.currentLine=33161221;
+ //BA.debugLineNum = 33161221;BA.debugLine="Dim AllItems As List = obj(2)";
 _allitems = new anywheresoftware.b4a.objects.collections.List();
 _allitems = (anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(_obj[(int) (2)]));
- //BA.debugLineNum = 239;BA.debugLine="End Sub";
+RDebugUtils.currentLine=33161222;
+ //BA.debugLineNum = 33161222;BA.debugLine="End Sub";
 return "";
 }
-public Object  _setitems(anywheresoftware.b4a.objects.collections.List _items) throws Exception{
+public Object  _setitems(b4a.DesaWisataSumpu.b4xsearchtemplate __ref,anywheresoftware.b4a.objects.collections.List _items) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4xsearchtemplate";
+if (Debug.shouldDelegate(ba, "setitems", true))
+	 {return ((Object) Debug.delegate(ba, "setitems", new Object[] {_items}));}
 long _starttime = 0L;
 anywheresoftware.b4a.objects.collections.Map _noduplicates = null;
 anywheresoftware.b4a.objects.collections.Map _m = null;
@@ -320,69 +627,95 @@ String _itemtolower = "";
 int _start = 0;
 int _count = 0;
 String _str = "";
- //BA.debugLineNum = 196;BA.debugLine="Public Sub SetItems(Items As List) As Object";
- //BA.debugLineNum = 197;BA.debugLine="Dim startTime As Long";
+RDebugUtils.currentLine=33095680;
+ //BA.debugLineNum = 33095680;BA.debugLine="Public Sub SetItems(Items As List) As Object";
+RDebugUtils.currentLine=33095681;
+ //BA.debugLineNum = 33095681;BA.debugLine="Dim startTime As Long";
 _starttime = 0L;
- //BA.debugLineNum = 198;BA.debugLine="startTime = DateTime.Now";
+RDebugUtils.currentLine=33095682;
+ //BA.debugLineNum = 33095682;BA.debugLine="startTime = DateTime.Now";
 _starttime = __c.DateTime.getNow();
- //BA.debugLineNum = 199;BA.debugLine="Dim noDuplicates As Map";
+RDebugUtils.currentLine=33095683;
+ //BA.debugLineNum = 33095683;BA.debugLine="Dim noDuplicates As Map";
 _noduplicates = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 200;BA.debugLine="noDuplicates.Initialize";
+RDebugUtils.currentLine=33095684;
+ //BA.debugLineNum = 33095684;BA.debugLine="noDuplicates.Initialize";
 _noduplicates.Initialize();
- //BA.debugLineNum = 201;BA.debugLine="prefixList.Clear";
-_prefixlist.Clear();
- //BA.debugLineNum = 202;BA.debugLine="substringList.Clear";
-_substringlist.Clear();
- //BA.debugLineNum = 203;BA.debugLine="Dim m As Map";
+RDebugUtils.currentLine=33095685;
+ //BA.debugLineNum = 33095685;BA.debugLine="prefixList.Clear";
+__ref._prefixlist /*anywheresoftware.b4a.objects.collections.Map*/ .Clear();
+RDebugUtils.currentLine=33095686;
+ //BA.debugLineNum = 33095686;BA.debugLine="substringList.Clear";
+__ref._substringlist /*anywheresoftware.b4a.objects.collections.Map*/ .Clear();
+RDebugUtils.currentLine=33095687;
+ //BA.debugLineNum = 33095687;BA.debugLine="Dim m As Map";
 _m = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 204;BA.debugLine="Dim li As List";
+RDebugUtils.currentLine=33095688;
+ //BA.debugLineNum = 33095688;BA.debugLine="Dim li As List";
 _li = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 205;BA.debugLine="For i = 0 To Items.Size - 1";
+RDebugUtils.currentLine=33095689;
+ //BA.debugLineNum = 33095689;BA.debugLine="For i = 0 To Items.Size - 1";
 {
 final int step9 = 1;
 final int limit9 = (int) (_items.getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit9 ;_i = _i + step9 ) {
- //BA.debugLineNum = 206;BA.debugLine="Dim itemNotLower As String = Items.Get(i)";
+RDebugUtils.currentLine=33095690;
+ //BA.debugLineNum = 33095690;BA.debugLine="Dim itemNotLower As String = Items.Get(i)";
 _itemnotlower = BA.ObjectToString(_items.Get(_i));
- //BA.debugLineNum = 207;BA.debugLine="Dim itemToLower As String = itemNotLower.ToLower";
+RDebugUtils.currentLine=33095691;
+ //BA.debugLineNum = 33095691;BA.debugLine="Dim itemToLower As String = itemNotLower.ToLower";
 _itemtolower = _itemnotlower.toLowerCase();
- //BA.debugLineNum = 208;BA.debugLine="noDuplicates.Clear";
+RDebugUtils.currentLine=33095692;
+ //BA.debugLineNum = 33095692;BA.debugLine="noDuplicates.Clear";
 _noduplicates.Clear();
- //BA.debugLineNum = 209;BA.debugLine="For start = 0 To IIf(PrefixOnly, 0, itemToLower.";
+RDebugUtils.currentLine=33095693;
+ //BA.debugLineNum = 33095693;BA.debugLine="For start = 0 To IIf(PrefixOnly, 0, itemToLower.";
 {
 final int step13 = 1;
-final int limit13 = (int)(BA.ObjectToNumber(((_prefixonly) ? ((Object)(0)) : ((Object)(_itemtolower.length()-1)))));
+final int limit13 = (int)(BA.ObjectToNumber(((__ref._prefixonly /*boolean*/ ) ? ((Object)(0)) : ((Object)(_itemtolower.length()-1)))));
 _start = (int) (0) ;
 for (;_start <= limit13 ;_start = _start + step13 ) {
- //BA.debugLineNum = 210;BA.debugLine="Dim count As Int = 1";
+RDebugUtils.currentLine=33095694;
+ //BA.debugLineNum = 33095694;BA.debugLine="Dim count As Int = 1";
 _count = (int) (1);
- //BA.debugLineNum = 211;BA.debugLine="Do While count <= MAX_LIMIT And start + count <";
-while (_count<=_max_limit && _start+_count<=_itemtolower.length()) {
- //BA.debugLineNum = 212;BA.debugLine="Dim str As String = itemToLower.SubString2(sta";
+RDebugUtils.currentLine=33095695;
+ //BA.debugLineNum = 33095695;BA.debugLine="Do While count <= MAX_LIMIT And start + count <";
+while (_count<=__ref._max_limit /*int*/  && _start+_count<=_itemtolower.length()) {
+RDebugUtils.currentLine=33095696;
+ //BA.debugLineNum = 33095696;BA.debugLine="Dim str As String = itemToLower.SubString2(sta";
 _str = _itemtolower.substring(_start,(int) (_start+_count));
- //BA.debugLineNum = 213;BA.debugLine="If noDuplicates.ContainsKey(str) = False Then";
+RDebugUtils.currentLine=33095697;
+ //BA.debugLineNum = 33095697;BA.debugLine="If noDuplicates.ContainsKey(str) = False Then";
 if (_noduplicates.ContainsKey((Object)(_str))==__c.False) { 
- //BA.debugLineNum = 214;BA.debugLine="noDuplicates.Put(str, \"\")";
+RDebugUtils.currentLine=33095698;
+ //BA.debugLineNum = 33095698;BA.debugLine="noDuplicates.Put(str, \"\")";
 _noduplicates.Put((Object)(_str),(Object)(""));
- //BA.debugLineNum = 215;BA.debugLine="If start = 0 Then m = prefixList Else m = sub";
+RDebugUtils.currentLine=33095699;
+ //BA.debugLineNum = 33095699;BA.debugLine="If start = 0 Then m = prefixList Else m = sub";
 if (_start==0) { 
-_m = _prefixlist;}
+_m = __ref._prefixlist /*anywheresoftware.b4a.objects.collections.Map*/ ;}
 else {
-_m = _substringlist;};
- //BA.debugLineNum = 216;BA.debugLine="li = m.Get(str)";
+_m = __ref._substringlist /*anywheresoftware.b4a.objects.collections.Map*/ ;};
+RDebugUtils.currentLine=33095700;
+ //BA.debugLineNum = 33095700;BA.debugLine="li = m.Get(str)";
 _li = (anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(_m.Get((Object)(_str))));
- //BA.debugLineNum = 217;BA.debugLine="If li.IsInitialized = False Then";
+RDebugUtils.currentLine=33095701;
+ //BA.debugLineNum = 33095701;BA.debugLine="If li.IsInitialized = False Then";
 if (_li.IsInitialized()==__c.False) { 
- //BA.debugLineNum = 218;BA.debugLine="li.Initialize";
+RDebugUtils.currentLine=33095702;
+ //BA.debugLineNum = 33095702;BA.debugLine="li.Initialize";
 _li.Initialize();
- //BA.debugLineNum = 219;BA.debugLine="m.Put(str, li)";
+RDebugUtils.currentLine=33095703;
+ //BA.debugLineNum = 33095703;BA.debugLine="m.Put(str, li)";
 _m.Put((Object)(_str),(Object)(_li.getObject()));
  };
- //BA.debugLineNum = 221;BA.debugLine="li.Add(itemNotLower)";
+RDebugUtils.currentLine=33095705;
+ //BA.debugLineNum = 33095705;BA.debugLine="li.Add(itemNotLower)";
 _li.Add((Object)(_itemnotlower));
  };
- //BA.debugLineNum = 223;BA.debugLine="count = count + 1";
+RDebugUtils.currentLine=33095707;
+ //BA.debugLineNum = 33095707;BA.debugLine="count = count + 1";
 _count = (int) (_count+1);
  }
 ;
@@ -390,136 +723,28 @@ _count = (int) (_count+1);
 };
  }
 };
- //BA.debugLineNum = 227;BA.debugLine="Log(\"Index time: \" & (DateTime.Now - startTime) &";
+RDebugUtils.currentLine=33095711;
+ //BA.debugLineNum = 33095711;BA.debugLine="Log(\"Index time: \" & (DateTime.Now - startTime) &";
 __c.LogImpl("933095711","Index time: "+BA.NumberToString((__c.DateTime.getNow()-_starttime))+" ms ("+BA.NumberToString(_items.getSize())+" Items)",0);
- //BA.debugLineNum = 228;BA.debugLine="AllItems = Items";
-_allitems = _items;
- //BA.debugLineNum = 229;BA.debugLine="Return Array(prefixList, substringList, AllItems)";
-if (true) return (Object)(new Object[]{(Object)(_prefixlist.getObject()),(Object)(_substringlist.getObject()),(Object)(_allitems.getObject())});
- //BA.debugLineNum = 230;BA.debugLine="End Sub";
+RDebugUtils.currentLine=33095712;
+ //BA.debugLineNum = 33095712;BA.debugLine="AllItems = Items";
+__ref._allitems /*anywheresoftware.b4a.objects.collections.List*/  = _items;
+RDebugUtils.currentLine=33095713;
+ //BA.debugLineNum = 33095713;BA.debugLine="Return Array(prefixList, substringList, AllItems)";
+if (true) return (Object)(new Object[]{(Object)(__ref._prefixlist /*anywheresoftware.b4a.objects.collections.Map*/ .getObject()),(Object)(__ref._substringlist /*anywheresoftware.b4a.objects.collections.Map*/ .getObject()),(Object)(__ref._allitems /*anywheresoftware.b4a.objects.collections.List*/ .getObject())});
+RDebugUtils.currentLine=33095714;
+ //BA.debugLineNum = 33095714;BA.debugLine="End Sub";
 return null;
 }
-public void  _show(b4a.DesaWisataSumpu.b4xdialog _dialog) throws Exception{
-ResumableSub_Show rsub = new ResumableSub_Show(this,_dialog);
-rsub.resume(ba, null);
-}
-public static class ResumableSub_Show extends BA.ResumableSub {
-public ResumableSub_Show(b4a.DesaWisataSumpu.b4xsearchtemplate parent,b4a.DesaWisataSumpu.b4xdialog _dialog) {
-this.parent = parent;
-this._dialog = _dialog;
-}
-b4a.DesaWisataSumpu.b4xsearchtemplate parent;
-b4a.DesaWisataSumpu.b4xdialog _dialog;
-
-@Override
-public void resume(BA ba, Object[] result) throws Exception{
-
-    while (true) {
-        switch (state) {
-            case -1:
-return;
-
-case 0:
-//C
-this.state = -1;
- //BA.debugLineNum = 66;BA.debugLine="xDialog = Dialog";
-parent._xdialog = _dialog;
- //BA.debugLineNum = 67;BA.debugLine="xDialog.PutAtTop = xui.IsB4A Or xui.IsB4i";
-parent._xdialog._putattop /*boolean*/  = parent._xui.getIsB4A() || parent._xui.getIsB4i();
- //BA.debugLineNum = 68;BA.debugLine="CustomListView1.AsView.Color = xui.Color_Transpar";
-parent._customlistview1._asview().setColor(parent._xui.Color_Transparent);
- //BA.debugLineNum = 69;BA.debugLine="CustomListView1.sv.Color = xui.Color_Transparent";
-parent._customlistview1._sv.setColor(parent._xui.Color_Transparent);
- //BA.debugLineNum = 70;BA.debugLine="mBase.Color = xui.Color_Transparent";
-parent._mbase.setColor(parent._xui.Color_Transparent);
- //BA.debugLineNum = 71;BA.debugLine="Sleep(20)";
-parent.__c.Sleep(ba,this,(int) (20));
-this.state = 1;
-return;
-case 1:
-//C
-this.state = -1;
-;
- //BA.debugLineNum = 72;BA.debugLine="Update(\"\", True)";
-parent._update("",parent.__c.True);
- //BA.debugLineNum = 73;BA.debugLine="CustomListView1.JumpToItem(0)";
-parent._customlistview1._jumptoitem((int) (0));
- //BA.debugLineNum = 74;BA.debugLine="SearchField.Text = \"\"";
-parent._searchfield._settext /*String*/ ("");
- //BA.debugLineNum = 75;BA.debugLine="SearchField.TextField.RequestFocus";
-parent._searchfield._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ().RequestFocus();
- //BA.debugLineNum = 77;BA.debugLine="IME.ShowKeyboard(SearchField.TextField)";
-parent._ime.ShowKeyboard((android.view.View)(parent._searchfield._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ().getObject()));
- //BA.debugLineNum = 79;BA.debugLine="End Sub";
-if (true) break;
-
-            }
-        }
-    }
-}
-public String  _update(String _term,boolean _force) throws Exception{
-int _i = 0;
-anywheresoftware.b4a.objects.B4XViewWrapper _p = null;
-String _str1 = "";
-String _str2 = "";
- //BA.debugLineNum = 85;BA.debugLine="Private Sub Update(Term As String, Force As Boolea";
- //BA.debugLineNum = 86;BA.debugLine="If Term = LastTerm And Force = False Then Return";
-if ((_term).equals(_lastterm) && _force==__c.False) { 
-if (true) return "";};
- //BA.debugLineNum = 87;BA.debugLine="LastTerm = Term";
-_lastterm = _term;
- //BA.debugLineNum = 88;BA.debugLine="If xui.IsB4J = False Then";
-if (_xui.getIsB4J()==__c.False) { 
- //BA.debugLineNum = 89;BA.debugLine="For i = 0 To CustomListView1.Size - 1";
-{
-final int step4 = 1;
-final int limit4 = (int) (_customlistview1._getsize()-1);
-_i = (int) (0) ;
-for (;_i <= limit4 ;_i = _i + step4 ) {
- //BA.debugLineNum = 90;BA.debugLine="Dim p As B4XView = CustomListView1.GetPanel(i)";
-_p = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_p = _customlistview1._getpanel(_i);
- //BA.debugLineNum = 91;BA.debugLine="p.RemoveViewFromParent";
-_p.RemoveViewFromParent();
- //BA.debugLineNum = 92;BA.debugLine="ItemsCache.Add(p)";
-_itemscache.Add((Object)(_p.getObject()));
- }
-};
- };
- //BA.debugLineNum = 95;BA.debugLine="CustomListView1.Clear";
-_customlistview1._clear();
- //BA.debugLineNum = 97;BA.debugLine="Dim str1, str2 As String";
-_str1 = "";
-_str2 = "";
- //BA.debugLineNum = 98;BA.debugLine="str1 = Term.ToLowerCase";
-_str1 = _term.toLowerCase();
- //BA.debugLineNum = 99;BA.debugLine="If Term = \"\" Then";
-if ((_term).equals("")) { 
- //BA.debugLineNum = 100;BA.debugLine="AddItemsToList(AllItems, str1)";
-_additemstolist(_allitems,_str1);
- }else {
- //BA.debugLineNum = 102;BA.debugLine="If str1.Length > MAX_LIMIT Then";
-if (_str1.length()>_max_limit) { 
- //BA.debugLineNum = 103;BA.debugLine="str2 = str1.SubString2(0, MAX_LIMIT)";
-_str2 = _str1.substring((int) (0),_max_limit);
- }else {
- //BA.debugLineNum = 105;BA.debugLine="str2 = str1";
-_str2 = _str1;
- };
- //BA.debugLineNum = 107;BA.debugLine="AddItemsToList(prefixList.Get(str2), str1)";
-_additemstolist((anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(_prefixlist.Get((Object)(_str2)))),_str1);
- //BA.debugLineNum = 108;BA.debugLine="AddItemsToList(substringList.Get(str2), str1)";
-_additemstolist((anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(_substringlist.Get((Object)(_str2)))),_str1);
- };
- //BA.debugLineNum = 110;BA.debugLine="End Sub";
-return "";
-}
-public Object callSub(String sub, Object sender, Object[] args) throws Exception {
-BA.senderHolder.set(sender);
-if (BA.fastSubCompare(sub, "DIALOGCLOSED"))
-	return _dialogclosed(((Number)args[0]).intValue());
-if (BA.fastSubCompare(sub, "GETPANEL"))
-	return _getpanel((b4a.DesaWisataSumpu.b4xdialog) args[0]);
-return BA.SubDelegator.SubNotFound;
+public void RemoveWarning() throws Exception{
+	anywheresoftware.b4a.shell.Shell s = anywheresoftware.b4a.shell.Shell.INSTANCE;
+	java.lang.reflect.Field f = s.getClass().getDeclaredField("errorMessagesForSyncEvents");
+	f.setAccessible(true);
+	java.util.HashSet<String> h = (java.util.HashSet<String>)f.get(s);
+	if (h == null) {
+		h = new java.util.HashSet<String>();
+		f.set(s, h);
+	}
+	h.add("tf_focuschanged");
 }
 }

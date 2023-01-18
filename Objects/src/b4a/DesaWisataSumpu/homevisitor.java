@@ -34,7 +34,7 @@ public class homevisitor extends Activity implements B4AActivity{
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new BA(this.getApplicationContext(), null, null, "b4a.DesaWisataSumpu", "b4a.DesaWisataSumpu.homevisitor");
+			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "b4a.DesaWisataSumpu", "b4a.DesaWisataSumpu.homevisitor");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,6 +335,15 @@ public class homevisitor extends Activity implements B4AActivity{
             
     }
 
+
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public anywheresoftware.b4a.objects.LabelWrapper _labelheader = null;
 public anywheresoftware.b4a.objects.LabelWrapper _labelname = null;
@@ -368,126 +377,119 @@ public b4a.DesaWisataSumpu.listev _listev = null;
 public b4a.DesaWisataSumpu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSumpu.b4xcollections _b4xcollections = null;
 public b4a.DesaWisataSumpu.xuiviewsutils _xuiviewsutils = null;
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
 public static String  _activity_create(boolean _firsttime) throws Exception{
- //BA.debugLineNum = 36;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 39;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
+RDebugUtils.currentModule="homevisitor";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
+RDebugUtils.currentLine=1572864;
+ //BA.debugLineNum = 1572864;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=1572867;
+ //BA.debugLineNum = 1572867;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
 mostCurrent._activity.LoadLayout("MainScrollView",mostCurrent.activityBA);
- //BA.debugLineNum = 40;BA.debugLine="MainScroll.Panel.LoadLayout(\"HomeVisitor\")";
+RDebugUtils.currentLine=1572868;
+ //BA.debugLineNum = 1572868;BA.debugLine="MainScroll.Panel.LoadLayout(\"HomeVisitor\")";
 mostCurrent._mainscroll.getPanel().LoadLayout("HomeVisitor",mostCurrent.activityBA);
- //BA.debugLineNum = 41;BA.debugLine="PanelHome.Height = MainScroll.Height";
+RDebugUtils.currentLine=1572869;
+ //BA.debugLineNum = 1572869;BA.debugLine="PanelHome.Height = MainScroll.Height";
 mostCurrent._panelhome.setHeight(mostCurrent._mainscroll.getHeight());
- //BA.debugLineNum = 42;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
+RDebugUtils.currentLine=1572870;
+ //BA.debugLineNum = 1572870;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
 mostCurrent._mainscroll.getPanel().setHeight(mostCurrent._mainscroll.getHeight());
- //BA.debugLineNum = 43;BA.debugLine="TitleNavbar.Text=\"Home Visitor\"";
+RDebugUtils.currentLine=1572871;
+ //BA.debugLineNum = 1572871;BA.debugLine="TitleNavbar.Text=\"Home Visitor\"";
 mostCurrent._titlenavbar.setText(BA.ObjectToCharSequence("Home Visitor"));
- //BA.debugLineNum = 44;BA.debugLine="BtnBack.Visible = False";
+RDebugUtils.currentLine=1572872;
+ //BA.debugLineNum = 1572872;BA.debugLine="BtnBack.Visible = False";
 mostCurrent._btnback.setVisible(anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 46;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1572874;
+ //BA.debugLineNum = 1572874;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 55;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 57;BA.debugLine="End Sub";
+RDebugUtils.currentModule="homevisitor";
+RDebugUtils.currentLine=1703936;
+ //BA.debugLineNum = 1703936;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=1703938;
+ //BA.debugLineNum = 1703938;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 48;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 49;BA.debugLine="Log(\"HomeVisitor loaded\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("41638401","HomeVisitor loaded",0);
- //BA.debugLineNum = 50;BA.debugLine="LabelName.Text = \"Hello, Visitor\"";
+RDebugUtils.currentModule="homevisitor";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
+RDebugUtils.currentLine=1638400;
+ //BA.debugLineNum = 1638400;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=1638401;
+ //BA.debugLineNum = 1638401;BA.debugLine="Log(\"HomeVisitor loaded\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("51638401","HomeVisitor loaded",0);
+RDebugUtils.currentLine=1638402;
+ //BA.debugLineNum = 1638402;BA.debugLine="LabelName.Text = \"Hello, Visitor\"";
 mostCurrent._labelname.setText(BA.ObjectToCharSequence("Hello, Visitor"));
- //BA.debugLineNum = 51;BA.debugLine="LabelUsername.Text = \"\"";
+RDebugUtils.currentLine=1638403;
+ //BA.debugLineNum = 1638403;BA.debugLine="LabelUsername.Text = \"\"";
 mostCurrent._labelusername.setText(BA.ObjectToCharSequence(""));
- //BA.debugLineNum = 53;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1638405;
+ //BA.debugLineNum = 1638405;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnev_click() throws Exception{
- //BA.debugLineNum = 75;BA.debugLine="Private Sub BtnEV_Click";
- //BA.debugLineNum = 76;BA.debugLine="Log(\"Redirect to MapsEV Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("41900545","Redirect to MapsEV Activity",0);
- //BA.debugLineNum = 77;BA.debugLine="StartActivity(MapsEV)";
+RDebugUtils.currentModule="homevisitor";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnev_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnev_click", null));}
+RDebugUtils.currentLine=1900544;
+ //BA.debugLineNum = 1900544;BA.debugLine="Private Sub BtnEV_Click";
+RDebugUtils.currentLine=1900545;
+ //BA.debugLineNum = 1900545;BA.debugLine="Log(\"Redirect to MapsEV Activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("51900545","Redirect to MapsEV Activity",0);
+RDebugUtils.currentLine=1900546;
+ //BA.debugLineNum = 1900546;BA.debugLine="StartActivity(MapsEV)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mapsev.getObject()));
- //BA.debugLineNum = 78;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1900547;
+ //BA.debugLineNum = 1900547;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnlogin_click() throws Exception{
- //BA.debugLineNum = 65;BA.debugLine="Private Sub BtnLogin_Click";
- //BA.debugLineNum = 66;BA.debugLine="Log(\"Redirect to Main Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("41835009","Redirect to Main Activity",0);
- //BA.debugLineNum = 68;BA.debugLine="Main.manager.SetBoolean(\"is_login\", False)";
+RDebugUtils.currentModule="homevisitor";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnlogin_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnlogin_click", null));}
+RDebugUtils.currentLine=1835008;
+ //BA.debugLineNum = 1835008;BA.debugLine="Private Sub BtnLogin_Click";
+RDebugUtils.currentLine=1835009;
+ //BA.debugLineNum = 1835009;BA.debugLine="Log(\"Redirect to Main Activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("51835009","Redirect to Main Activity",0);
+RDebugUtils.currentLine=1835011;
+ //BA.debugLineNum = 1835011;BA.debugLine="Main.manager.SetBoolean(\"is_login\", False)";
 mostCurrent._main._manager /*de.amberhome.objects.preferenceactivity.PreferenceManager*/ .SetBoolean("is_login",anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 69;BA.debugLine="Main.manager.SetBoolean(\"visitor\", False)";
+RDebugUtils.currentLine=1835012;
+ //BA.debugLineNum = 1835012;BA.debugLine="Main.manager.SetBoolean(\"visitor\", False)";
 mostCurrent._main._manager /*de.amberhome.objects.preferenceactivity.PreferenceManager*/ .SetBoolean("visitor",anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 70;BA.debugLine="Main.manager.SetBoolean(\"user\", False)";
+RDebugUtils.currentLine=1835013;
+ //BA.debugLineNum = 1835013;BA.debugLine="Main.manager.SetBoolean(\"user\", False)";
 mostCurrent._main._manager /*de.amberhome.objects.preferenceactivity.PreferenceManager*/ .SetBoolean("user",anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 71;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=1835014;
+ //BA.debugLineNum = 1835014;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
- //BA.debugLineNum = 72;BA.debugLine="StartActivity(Main)";
+RDebugUtils.currentLine=1835015;
+ //BA.debugLineNum = 1835015;BA.debugLine="StartActivity(Main)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._main.getObject()));
- //BA.debugLineNum = 73;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1835016;
+ //BA.debugLineNum = 1835016;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnrg_click() throws Exception{
- //BA.debugLineNum = 60;BA.debugLine="Private Sub BtnRG_Click";
- //BA.debugLineNum = 61;BA.debugLine="Log(\"Redirect to MapsRG Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("41769473","Redirect to MapsRG Activity",0);
- //BA.debugLineNum = 62;BA.debugLine="StartActivity(MapsRG)";
+RDebugUtils.currentModule="homevisitor";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnrg_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnrg_click", null));}
+RDebugUtils.currentLine=1769472;
+ //BA.debugLineNum = 1769472;BA.debugLine="Private Sub BtnRG_Click";
+RDebugUtils.currentLine=1769473;
+ //BA.debugLineNum = 1769473;BA.debugLine="Log(\"Redirect to MapsRG Activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("51769473","Redirect to MapsRG Activity",0);
+RDebugUtils.currentLine=1769474;
+ //BA.debugLineNum = 1769474;BA.debugLine="StartActivity(MapsRG)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mapsrg.getObject()));
- //BA.debugLineNum = 63;BA.debugLine="End Sub";
-return "";
-}
-public static String  _globals() throws Exception{
- //BA.debugLineNum = 12;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 16;BA.debugLine="Private LabelHeader As Label";
-mostCurrent._labelheader = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 17;BA.debugLine="Private LabelName As Label";
-mostCurrent._labelname = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 18;BA.debugLine="Private LabelUsername As Label";
-mostCurrent._labelusername = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 19;BA.debugLine="Private PanelBanner As Panel";
-mostCurrent._panelbanner = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 20;BA.debugLine="Private PanelHome As Panel";
-mostCurrent._panelhome = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 21;BA.debugLine="Private PanelMenu As Panel";
-mostCurrent._panelmenu = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 22;BA.debugLine="Private PanelProfile As Panel";
-mostCurrent._panelprofile = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 23;BA.debugLine="Private ProfileAvatar As ImageView";
-mostCurrent._profileavatar = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 24;BA.debugLine="Private BtnBack As Button";
-mostCurrent._btnback = new anywheresoftware.b4a.objects.ButtonWrapper();
- //BA.debugLineNum = 25;BA.debugLine="Private MainScroll As ScrollView";
-mostCurrent._mainscroll = new anywheresoftware.b4a.objects.ScrollViewWrapper();
- //BA.debugLineNum = 26;BA.debugLine="Private Navbar As Panel";
-mostCurrent._navbar = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 27;BA.debugLine="Private TitleNavbar As Label";
-mostCurrent._titlenavbar = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 28;BA.debugLine="Private BtnEV As Button";
-mostCurrent._btnev = new anywheresoftware.b4a.objects.ButtonWrapper();
- //BA.debugLineNum = 29;BA.debugLine="Private BtnLogin As Button";
-mostCurrent._btnlogin = new anywheresoftware.b4a.objects.ButtonWrapper();
- //BA.debugLineNum = 30;BA.debugLine="Private BtnRG As Button";
-mostCurrent._btnrg = new anywheresoftware.b4a.objects.ButtonWrapper();
- //BA.debugLineNum = 31;BA.debugLine="Private LabelEV As Label";
-mostCurrent._labelev = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 32;BA.debugLine="Private LabelLogin As Label";
-mostCurrent._labellogin = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 33;BA.debugLine="Private LabelRG As Label";
-mostCurrent._labelrg = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 34;BA.debugLine="End Sub";
-return "";
-}
-public static String  _process_globals() throws Exception{
- //BA.debugLineNum = 6;BA.debugLine="Sub Process_Globals";
- //BA.debugLineNum = 10;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1769475;
+ //BA.debugLineNum = 1769475;BA.debugLine="End Sub";
 return "";
 }
 }
